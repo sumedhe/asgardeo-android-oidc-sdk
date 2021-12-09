@@ -88,6 +88,8 @@ publishing {
             }
 
             url = version.endsWith('SNAPSHOT') ? nexusSnapshotUrl : nexusReleaseUrl
+
+            allowInsecureProtocol = true // TODO: Remove
         }
     }
 }
